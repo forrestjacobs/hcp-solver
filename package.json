@@ -1,0 +1,48 @@
+{
+  "name": "hcp-solver",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/jest": "20.0.x",
+    "jest": "20.0.x",
+    "rimraf": "2.6.x",
+    "ts-jest": "20.0.x",
+    "tslint": "5.5.x",
+    "typescript": "2.4.x"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prebuild": "rimraf dist",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "coveragePathIgnorePatterns": [
+      "src/types.ts"
+    ],
+    "mapCoverage": true
+  }
+}

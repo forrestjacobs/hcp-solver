@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "moduleResolution": "Node",
+        "lib": ["es6", "dom"],
+        "outDir": "dist",
+        "declaration": true,
+        "allowSyntheticDefaultImports": true,
+        "inlineSourceMap": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "strict": true
+    },
+    "files": ["src/index.ts"],
+    "exclude": ["src/**/*.test.ts"]
+}

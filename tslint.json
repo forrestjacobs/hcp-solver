@@ -1,0 +1,10 @@
+{
+    "extends": "tslint:all",
+    "rules": {
+        "completed-docs": false,
+        "interface-name": [true, "never-prefix"],
+        "newline-before-return": false,
+        "only-arrow-functions": [true, "allow-named-functions"],
+        "typedef": [true, "call-signature", "parameter", "property-declaration", "member-variable-declaration"]
+    }
+}
