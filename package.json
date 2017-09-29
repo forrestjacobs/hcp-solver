@@ -1,7 +1,6 @@
 {
   "name": "hcp-solver",
   "version": "0.1.0",
-  "private": true,
   "devDependencies": {
     "@types/jest": "20.0.x",
     "jest": "20.0.x",
